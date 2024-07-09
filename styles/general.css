@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+    color: #ADC178;
+}
+
+.toggle {
+    cursor: pointer;
+    display: block;
+}
+
+.toggle i {
+    color: #fff;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ADC178;
+    padding: 10px;
+    align-items: center;
+}
+
+ul {
+    margin-bottom: 0 !important;
+}
+
+
+li a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+
+.menu-content {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 5px;
+    align-items: center;
+
+}
+.menu-content.show {
+    display: flex;
+ }
+
+ a:not([href]):not([class]), 
+ a:not([href]):not([class]):hover {
+    color: #fff;
+ }
+
+
+@media screen and (min-width: 501px) {
+    .menu-content {
+        display: flex;
+        color: #fff;
+    }
+    .menu-content a {
+        color: #fff !important;
+    }
+    .toggle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu-content.show {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+        right: 0;
+        left: 0;
+        position: absolute;
+        top: 43px;
+        bottom: 0;
+        border-bottom: 1px solid #ADC178;
+        font-size: 30px;
+        background-color: #ADC178;
+        z-index: 10;
+    }
+    .menu-content.show a{
+        color: #fff!important;
+    }
+}
