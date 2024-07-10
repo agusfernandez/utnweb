@@ -3,6 +3,26 @@
 .carousel-item  {
     position: relative;
 }
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #000;
+}
+
+
+.title-carrusel {
+    font-family: "Chakra Petch", sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-weight: 800;
+}
+
 .btn-carusel {
     background-color:  #ADC178;
     padding: 10px 15px;
@@ -17,12 +37,68 @@
     bottom: 4rem!important;
 }
 
+.products-section {
+    margin: 20px 0;
+}
+
+.card {
+    border: 1px solid #000 !important;
+}
+
+.card-text {
+    color: #000;
+}
+
+.card-image {
+    object-fit: cover;
+}
+
+
+
 @media screen and (max-width: 500px) {
     .carousel-item {
-        height: 80vh;
+        height: 60vh;
     }
     
     .carousel-item img {
         height: 100%;
+    }
+
+    .card-image {
+        height: 200px;
+    }
+
+    .col-card {
+        width: 50% !important;
+    }
+
+    .card-text {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .col-card {
+        width: 100% !important;
+    }
+
+   
+}
+
+@media screen and (min-width: 500px) {
+
+    .products-section {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .title-carrusel {
+        font-size: 120px;
+        width: 40%;
+    }
+
+    .card-image {
+        height: 380px;
     }
 }
