@@ -5,7 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", serif;
-    color: #ADC178;
+    /* color: #ADC178; */
 }
 
 .toggle {
@@ -95,33 +95,30 @@ li a {
 }
 
 footer{
+    margin: 0;
     padding: 100px 50px;
-    background-color: #808080;
+    background-color: #ADC178;
     text-decoration: none;
+    color: #fff;
 }
 
 .footer-content{
-    padding: 0 350px;
+    padding: 0;
     margin: 0;
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;
-    columns: 3 1rem;
     align-items: center;
     justify-content: space-around;
-    text-align: start;
+    text-align: center;
 }
 
-.acerca-de{
-    list-style-type: none;
-    text-decoration: none;
+.footer-content ul li a{
+    color: #fff;
 }
 
-.ayuda{
-    list-style-type: none;
-    text-decoration: none;
-}
-
+.acerca-de,
+.ayuda,
 .redes-sociales{
     list-style-type: none;
     text-decoration: none;
