@@ -6,12 +6,14 @@
     <title>Marketplace</title>
     <link rel="stylesheet" href="../styles/general.css">
     <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/form.css">
+
     <script src="https://kit.fontawesome.com/199884ed59.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <nav>
-        <img src="" alt="logo"/>
+        <img src="../images/logo.png" alt="logo"/>
         <a class="toggle"><i class="fa-solid fa-bars"></i></a>
         <ul class="menu-content">
             <li><a href="../index.html">Home</a></li>
@@ -19,7 +21,49 @@
             <li><a>Admin</a></li>   
         </ul>
     </nav>
+
+    <div class="container">
+      <div class="row">
+        <h3 class="title">Cargar un producto</h3>
+        <form class="form">
+          <div class="form-item">
+            <label for="nombre">Nombre del producto</label>
+            <input class="form-input" type="text" id="nombre" name="nombre" />
+          </div>
     
+          <div class="form-item">
+            <label for="descripcion">Descripción del producto</label>
+            <input class="form-input" type="text" id="descripcion" name="descripcion" />
+          </div>
+    
+          <div class="form-item">
+            <label for="color">Color</label>
+            <input class="form-input" type="text" id="color" name="color" />
+          </div>
+    
+          <div class="form-item">
+            <label for="Precio">Precio</label>
+            <input class="form-input" type="text" id="Precio" name="Precio" />
+          </div>
+    
+          <div class="formgroup">
+            <label for="imagen">Subir Imágenes del Producto</label>
+            <div class="input-file-wrapper">
+              <label class="productoPrice" for="imagen">Seleccionar Archivo</label>
+              <span id="file-name">No se ha seleccionado archivo</span>
+              <input class="file" type="file" id="imagen" name="imagen" />
+            </div>
+          </div>
+    
+          <div></div>
+    
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+        
+      </div>
+    </div>
+
+
 </body>
 <script src="../app/menu.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
