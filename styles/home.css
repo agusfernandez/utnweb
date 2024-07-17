@@ -102,3 +102,29 @@
         height: 380px;
     }
 }
+
+.image-cont {
+    position: relative;
+    display: inline-block;
+}
+
+.image-cont img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-cont .btn2 {
+    transform: translate(300%, -140%); 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contene {
+    display: flex;
+    justify-content:space-around;
+    margin: 30px 0;
+}
+
