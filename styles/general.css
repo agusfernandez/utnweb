@@ -95,16 +95,14 @@ li a {
 }
 
 footer{
-    margin: 0;
-    padding: 100px 50px;
     background-color: #ADC178;
     text-decoration: none;
     color: #fff;
 }
 
 .footer-content{
-    padding: 0;
     margin: 0;
+    padding: 70px 50px 25px 50px;
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;
@@ -116,10 +114,27 @@ footer{
 .footer-content ul li a{
     color: #fff;
 }
+.footer-content div a{
+    color: #fff;
+}
 
 .acerca-de,
 .ayuda,
 .redes-sociales{
     list-style-type: none;
     text-decoration: none;
+}
+
+.redes-sociales{
+    padding-left: 30px;
+}
+
+.redes-sociales a i{
+    padding: 0 10px;
+}
+
+.copy{
+    position: relative;
+    text-align: center;
+    background-color: #5e6b39;
 }
