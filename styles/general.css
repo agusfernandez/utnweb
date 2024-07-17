@@ -93,6 +93,13 @@ li a {
     .menu-content.show a{
         color: #fff!important;
     }
+
+    .acerca-de,
+    .ayuda,
+    .redes-sociales{
+       margin-top: 15px;
+
+    }
 }
 
 footer{

@@ -25,41 +25,38 @@
     <div class="container">
       <div class="row">
         <h3 class="title">Cargar un producto</h3>
-        <form class="form">
-          <div class="form-item">
-            <label for="nombre">Nombre del producto</label>
-            <input class="form-input" type="text" id="nombre" name="nombre" />
-          </div>
-    
-          <div class="form-item">
-            <label for="descripcion">Descripción del producto</label>
-            <input class="form-input" type="text" id="descripcion" name="descripcion" />
-          </div>
-    
-          <div class="form-item">
-            <label for="color">Color</label>
-            <input class="form-input" type="text" id="color" name="color" />
-          </div>
-    
-          <div class="form-item">
-            <label for="Precio">Precio</label>
-            <input class="form-input" type="text" id="Precio" name="Precio" />
-          </div>
-    
-          <div class="formgroup">
-            <label for="imagen">Subir Imágenes del Producto</label>
-            <div class="input-file-wrapper">
-              <label class="productoPrice" for="imagen">Seleccionar Archivo</label>
-              <span id="file-name">No se ha seleccionado archivo</span>
-              <input class="file" type="file" id="imagen" name="imagen" />
-            </div>
-          </div>
-    
-          <div></div>
-    
-          <button class="btn" type="submit">Enviar</button>
-        </form>
-        
+
+          <form class="form row g-3">
+
+              <div class="col-md-6 col-sm-12">
+                  <label for="nombre" class="form-label">Nombre del producto</label>
+                  <input type="text" class="form-control" id="nombre"  name="nombre">
+              </div>
+              <div class="col-md-6 col-sm-12">
+                  <label for="descripcion" class="form-label">Descripción del producto</label>
+                  <input type="text" class="form-control" id="descripcion"  name="descripcion">
+              </div>
+
+              <div class="col-lg-6 col-sm-12">
+                  <label for="color" class="form-label">Color</label>
+                  <input type="text" class="form-control" id="color"  name="color">
+              </div>
+              <div class="col-lg-6  col-sm-12">
+                  <label for="precio" class="form-label">Precio</label>
+                  <input type="number" class="form-control" id="precio"  name="precio">
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                  <label for="formFile" class="form-label">Subir Imágenes del Producto</label>
+                  <input class="form-control" type="file" id="formFile">
+              </div>
+
+
+              <div class="col-12">
+                  <button class="btn" type="submit">Enviar</button>
+               </div>
+
+          </form>
+
       </div>
     </div>
 
