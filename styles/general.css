@@ -4,9 +4,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", serif;
-    /* color: #ADC178; */
 }
+
+
 
 .toggle {
     cursor: pointer;
@@ -25,6 +25,8 @@ nav {
     background-color: #ADC178;
     padding: 10px;
     align-items: center;
+    font-family: "Montserrat", sans-serif;
+
 }
 
 ul {
@@ -34,7 +36,6 @@ ul {
 
 li a {
     text-decoration: none;
-    font-family: "Montserrat", sans-serif;
     font-weight: 800;
 }
 
@@ -98,6 +99,8 @@ footer{
     background-color: #ADC178;
     text-decoration: none;
     color: #fff;
+    font-family: "Chakra Petch", sans-serif;
+    margin-top: 20px;
 }
 
 .footer-content{
@@ -106,7 +109,7 @@ footer{
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-around;
     text-align: center;
 }
@@ -123,6 +126,8 @@ footer{
 .redes-sociales{
     list-style-type: none;
     text-decoration: none;
+    font-family: "Chakra Petch", sans-serif;
+
 }
 
 .redes-sociales{
@@ -137,4 +142,7 @@ footer{
     position: relative;
     text-align: center;
     background-color: #5e6b39;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 12px;
 }
