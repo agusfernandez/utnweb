@@ -4,6 +4,8 @@
 // Client Secret -> yJMbZuc7Zp8J9WADHiSe3UccYDWNpqUS
 // Tu Access Token de Mercado Pago
 
+//ema aprende git
+
 
 document.addEventListener('DOMContentLoad', function(){
     const mueblesContainer= document.getElementById('products');
