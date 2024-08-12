@@ -7,7 +7,7 @@
 //ema aprende git
 
 
-document.addEventListener('DOMContentLoad', function(){
+document.addEventListener('DOMContentLoaded', function(){
     const mueblesContainer= document.getElementById('products');
 
     //Obtener info
@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoad', function(){
                 mueblesContainer.appendChild(muebleContainer);
              })
         })
-
         .catch(error => {
             console.log('error en la conexion con la api', error);
         })
