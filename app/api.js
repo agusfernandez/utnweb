@@ -9,10 +9,17 @@
 
 document.addEventListener('DOMContentLoaded', function(){
     const mueblesContainer= document.getElementById('products');
+    const url= 'https://api.mercadolibre.com/sites/MLA1574/categories';
+    const accessToken= 'yJMbZuc7Zp8J9WADHiSe3UccYDWNpqUS';
 
     //Obtener info
     function obtenerProductos(){
-        fetch('https://api.mercadolibre.com/sites/MLA1574/categories')
+        fetch(url, {
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${accessToken}`,
+                'Content-Type': 'application/json'
+            }})
         .then(response => response.json())
         .then(data => { 
             data.results.forEach(mueble => {
