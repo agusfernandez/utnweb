@@ -132,23 +132,40 @@
       </div>
   </section>
 
-<div class="miniaturas">
+  <section class="container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-12">
+        <div class="miniaturas">
 
-  <h3>Productos en oferta</h3>
+          <h3>Productos en oferta</h3>
 
-  <div class="main-image-container">
-    <img src="img1.jpg" id="main-image" alt="Imagen Principal">
-  </div>
 
-  <div class="imagen-container">
-    <img src="./images/Mueble1Miniatura.webp" class="mini" alt="Imagen 1">
-    <img src="./images/Mueble2Miniatura.jpg" class="mini" alt="Imagen 2">
-    <img src="./images/Mueble3Miniatura.jpeg" class="mini" alt="Imagen 3">
-    <img src="./images/Mueble4Miniatura.jpeg" class="mini" alt="Imagen 4">
+              <div class="main-image-container">
+                <img src="images/1.png" id="main-image" alt="Imagen Principal">
+              </div>
+            
+              <div class="imagen-container">
+                <img src="images/Mueble1Miniatura.webp" class="mini" alt="Imagen 1">
+                <img src="images/Mueble2Miniatura.jpg" class="mini" alt="Imagen 2">
+                <img src="images/Mueble3Miniatura.jpeg" class="mini" alt="Imagen 3">
+                <img src="images/Mueble4Miniatura.jpeg" class="mini" alt="Imagen 4">
+            
+              </div>
 
-  </div>
-    
-</div>
+
+          
+        
+        
+        
+        </div>
+      </div>
+      <div class="col-lg-6 col-sm-12">
+        <div id="map"></div>  
+      </div>
+    </div>
+  </section>
+
+
 
   <footer>
       <div class="footer-content">
@@ -181,8 +198,11 @@
       <div class="copy">© Copyright 2024. Todos los derechos reservados.</div>
   </footer>
 </body>
+  <!-- API de Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBxamkSMpwT5cBkdexPjWS64a-4iw8uDs&callback=initMap" async defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="app/menu.js"></script>
-<script src="./app/miniaturas.js"></script>
+<script src="app/map.js"></script>
+<script src="app/miniaturas.js"></script>
 </html>
