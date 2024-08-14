@@ -5,7 +5,7 @@ function initMap() {
       // Inicializar el mapa sin centrado
       map = new google.maps.Map(document.getElementById("map"), {
         zoom: 10,
-        center: { lat: -34.603722, lng: -58.381592 } // Centrar en coordenadas 0,0 temporalmente
+        center: { lat: -34.603722, lng: -58.381592 } 
       });
 
       const marker = new google.maps.Marker({
